@@ -23,7 +23,6 @@
         width: 100%;
         background-color: #dedede;
         box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-        font-size: 1.5em;
         z-index: 1;
     }
     
@@ -96,6 +95,7 @@
         width: 100%;
         margin-top: 60px;
         display: none;
+        font-size: 1.5em;
     }
     
     #m-arrow {
