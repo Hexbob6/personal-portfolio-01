@@ -1,1 +1,248 @@
+/*
+#ff4648 
+#e9e9e9
+#303850
+#dedede
+*/
 
+@media (max-width:1024px) {
+    .laptop {
+        display: none;
+    }
+    
+    .mobi {
+        display: block;
+    }
+    
+    /*HEADER BAR*/
+    .m-topbar {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background-color: #dedede;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+        z-index: 1;
+    }
+    
+    .m-hamburger {
+        float: left;
+        height: 100%;
+        width: 33.3%;
+    }
+    
+    .m-logo {
+        float: left;
+        height: 100%;
+        width: 33.3%;
+    }
+    
+    .m-search-icon {
+        float: left;
+        height: 100%;
+        width: 33.3%;
+    }
+    
+    .m-hamburger img {
+        margin-left: 20px;
+        display: block;
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+/*
+    .m-hamburger img:hover {
+        content: url(img/hamburger_icon_02.png);
+        cursor: pointer;
+    }
+*/
+    
+    input[type=checkbox]#m-ham_toggle:checked~label img {
+        display: block;
+        content: url(img/hamburger_icon_02.png);
+    }
+    
+    input[type=checkbox]#m-ham_toggle:checked~.m-dropdown {
+        display: block;
+    }
+    
+    .m-logo img {
+        display: block;
+        margin: 0 auto;
+        height: 75%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .m-search-icon img {
+        float: right;
+        margin-right: 20px;
+        display: block;
+        height: 40%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /*DROPDOWN MENU*/
+    .m-dropdown {
+        position: fixed;
+        float: left;
+        width: 100%;
+        margin-top: 60px;
+        display: none;
+    }
+    
+    #m-arrow {
+        position: relative;
+        margin: -20px 0 -12px 0;
+        padding-left: 20px;
+        font-size: 1.5em;
+        color: #ff4648;
+        cursor: default;
+    }
+    
+    .m-menu {
+        position: relative;
+        margin: 0 12px;
+        background-color: #dedede;
+        padding: 10px 0;
+        border-top: solid 10px #ff4648;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .3)
+    }
+    
+    .m-menu a {
+        text-decoration: inherit;
+        color: inherit;
+    }
+    
+    .m-menu a:hover {
+        color: #ff4648;
+    }
+    
+    .m-menu ul {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 200%;
+    }
+    
+    .m-menu hr {
+        display: none;
+        width: 75%;
+        border: none;
+        border-top: solid .1em #303850;
+    }
+    
+    .m-sub-menu {
+        margin: 10px 0;
+        font-size: .8em;
+        font-weight: 500;
+        display: none;
+    }
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    input[type=checkbox]#m-menu_toggle:checked~.m-sub-menu {
+        display: block;
+    }
+    
+    input[type=checkbox]#m-menu_toggle:checked~hr {
+        display: block;
+    }
+    
+    input[type=checkbox]#m-menu_toggle:checked~label {
+        display: block;
+        color: #ff4648;
+    }
+    
+    label:hover {
+        color: #ff4648;
+        cursor: pointer;
+    }
+    
+    label p {
+        display: inline-block;
+        position: relative;
+        bottom: .2em;
+        font-size: .6em;
+        margin: 0 0 0 .5em;
+    }
+    
+    
+    
+    /* CODE FOR THE PAGE CONTENT */
+    .m-content {
+        position: absolute;
+        top: calc(60px + 4vw);
+        left: 0;
+        right: 0;
+        height: relative;
+        z-index: -2;
+    }
+    
+    .m-col {
+        float: left;
+        width: 44%;
+        margin:0 0 0 4%;
+        height: relative;
+        background-color: none;
+    }
+    
+    .m-box-small {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-bottom: 4vw;
+        background-color: #303850;
+    }
+    
+    .m-box-big {
+        width: 100%;
+        padding-bottom: calc(200% + 4vw);
+        margin-bottom: 4vw;
+        background-color: #303850;
+    }
+    
+    
+    /* CODE FOR PAGE FOOTER */
+    .m-footer {
+        width: 100%;
+        height: 120px;
+        clear: both;
+        background-color: #dedede;
+        padding-top: 2px;
+        font-family: "Ubuntu", sans-serif;
+        font-style: italic;
+        font-size: 1em;
+        color: #303850;
+        text-align: center;
+        z-index: -3;
+    }
+    
+    .m-footer-content {
+        padding-bottom: 2px;
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+    }
+    
+    .m-footer hr{
+        border: none;
+        border-top: solid 1px #ff4648;
+        width: 80%;
+    }
+    
+    .social p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+}
