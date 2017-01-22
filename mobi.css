@@ -14,7 +14,9 @@
         display: block;
     }
     
-    /*HEADER BAR*/
+    
+    
+    /*CODE FOR HEADER BAR*/
     .m-topbar {
         padding: 0;
         margin: 0;
@@ -138,7 +140,7 @@
         display: none;
         width: 75%;
         border: none;
-        border-top: solid .1em #303850;
+        border-top: solid 1px #303850;
     }
     
     .m-sub-menu {
@@ -198,11 +200,43 @@
         background-color: none;
     }
     
+    .m-overlay-text {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        font-family: "Raleway";
+        color: #ff4648;
+        font-size: 1em; 
+        text-transform: uppercase;
+        text-align: center;
+        overflow: hidden;
+        display: none;
+        
+    }
+        
+    .m-overlay-text hr {
+        width: 75%;
+        border: none;
+        border-top: solid 1px #ff4648;
+    }
+    
+    .m-overlay-text-big hr {
+        width: 75%;
+        border: none;
+        border-top: solid 1px #ff4648;
+    }
+    
     .m-box-small {
         width: 100%;
         padding-bottom: 100%;
         margin-bottom: 4vw;
         background-color: #303850;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        height: 0;
     }
     
     .m-box-big {
@@ -210,8 +244,17 @@
         padding-bottom: calc(200% + 4vw);
         margin-bottom: 4vw;
         background-color: #303850;
+        cursor: pointer;
+        position: relative;
     }
     
+    .m-box-small:hover > .m-overlay-text {
+        display: block;
+    }
+
+    .m-box-big:hover>.m-overlay-text {
+        display: block;
+    }
     
     /* CODE FOR PAGE FOOTER */
     .m-footer {
